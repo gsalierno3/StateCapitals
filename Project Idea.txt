@@ -1,0 +1,8 @@
+The target user is anyone interested in learning state capitals and the two-letter state abbreviations.
+Even though there are two sets of information, there are a total of 100 items to be learned.
+
+The idea is to have the app select one of the 50 US states at random so a user can guess the state capital and the two-letter state abbreviation.
+
+If the user is not able to guess on 5 trials, the system will provide the answer.
+
+I was not born in the US and I came here as an adult.   This app will help me learn about state capitals and the two-letter state abbreviations.
