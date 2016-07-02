@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+
+    tools:context="com.example.android.statecapitals.MainActivity">
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp">
+
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/circle"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="6"
+            android:paddingLeft="16dp"
+            style="@style/headings"
+            android:text="US State:"/>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/stateToBeGuessed"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginBottom="32dp"
+        android:textColor="#000"
+        android:textAllCaps="true"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:background="#BBDEFB"
+        android:text="State"/>
+    <EditText
+        android:id="@+id/state_abbreviation"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginBottom="8dp"
+        android:hint="Enter State Abbreviation"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/abbreviation_answer_button"
+            style="@style/answer_buttons"
+            android:text="Final Answer"
+            android:onClick="checkAbbreviation"/>
+
+        <Button
+            android:id="@+id/abbreviation_reset_button"
+            style="@style/answer_buttons"
+            android:text="Reset Answer"
+            android:onClick="resetAbbreviation"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:layout_marginBottom="32dp"
+        android:background="@android:color/darker_gray"/>
+
+    <EditText
+        android:id="@+id/state_capital"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginBottom="8dp"
+        android:hint="Enter State Capital"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/capital_answer_button"
+            style="@style/answer_buttons"
+            android:text="Final Answer"
+            android:onClick="checkCapital"/>
+
+        <Button
+            android:id="@+id/capital_reset_button"
+            style="@style/answer_buttons"
+            android:text="Reset Answer"
+            android:onClick="capitalReset"/>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#E65100"
+        android:textSize="16sp"
+        android:textColor="#fff"
+        android:text="New State"
+        android:onClick="newState"/>
+
+
+</LinearLayout>
+</ScrollView>

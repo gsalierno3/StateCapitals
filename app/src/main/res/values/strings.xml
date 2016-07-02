@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">State Capitals</string>
+
+    <!-- Heading for MainActivity-->
+    <string name="US_States">US States</string>
+
+
+</resources>
